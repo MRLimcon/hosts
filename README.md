@@ -1,3 +1,3 @@
 # Hosts
-
-Arquivo hosts para bloqueio DNS e filtro para o Adblock ou Ublock Origin
+Just a hosts file for DNS blocking and an Adblock filter.
+Made from a lot of sources.
