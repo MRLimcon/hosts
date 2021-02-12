@@ -50213,9 +50213,7 @@
 ||www.deloton.com^
 ||www.dingit.tv^
 ||www.drive-now.de^
-||www.ecosia.org^
 ||www.europacasino.com^
-||www.facebook.com^
 ||www.fetulis.site^
 ||www.fluentu.com^
 ||www.foreverboygirl.com^
@@ -50289,7 +50287,6 @@
 ||lms-static.wgcdn.co^
 ||www.predictivdisplay.com^
 ||redir.wargaming.net^
-||cdn.jsdelivr.net^
 ||creative.admjmp.com^
 ||go.admjmp.com^
 ||lp.chatbro.com^
