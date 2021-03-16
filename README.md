@@ -1,4 +1,4 @@
-## MRLimcon hosts
+# MRLimcon hosts
 
 Filtro para adblocker e hosts file para Windows, Linux e Android. Feito a partir da combinação de diversas fontes e checagem por DNS Lookup, para verificar se o site ainda existe.
 
