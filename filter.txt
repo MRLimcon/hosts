@@ -1,7 +1,7 @@
 ! Homepage: https://gitlab.com/MRLimcon/hosts/
 ! Title: MRLimcon Filter List
 ! Expires: 3 days
-! Version: 3
+! Version: 4
 ||0-edge-chat.facebook.com^
 ||0.nextyourcontent.com^
 ||0.r.msn.com^
@@ -937,7 +937,6 @@
 ||2mdn.info^
 ||2mdnsys.com^
 ||2mf9kkbhab31.com^
-||2miners.com^
 ||2miners.ru^
 ||2mlh2fw7z62i.com^
 ||2no.co^
@@ -2289,6 +2288,7 @@
 ||a.baidu.com^
 ||a.bake818.cn^
 ||a.beliefnet.com^
+||a.bestcontentcost.top^
 ||a.bestcontentfacility.top^
 ||a.bestcontentfood.top^
 ||a.bestcontentitem.top^
@@ -7696,7 +7696,6 @@
 ||aijiboft.com^
 ||aijielang.cn^
 ||aikan6.com^
-||aikapool.com^
 ||ailalbapt.club^
 ||ailamtrieuphu.com^
 ||ailawlani.club^
@@ -10407,6 +10406,7 @@
 ||as.autobild.de^
 ||as.autoforums.com^
 ||as.casalemedia.com^
+||as.catsnbootsncats2020.com^
 ||as.chango.com^
 ||as.com^
 ||as.featurelink.com^
@@ -11117,7 +11117,6 @@
 ||azdqwztcp.com^
 ||azera-s014.com^
 ||azeriondigital.com^
-||azioncdn.net^
 ||azjmp.com^
 ||azlm-25.cdnamz.com^
 ||azmnp.com^
@@ -14311,6 +14310,7 @@
 ||camillesanz.com^
 ||camiocw.com^
 ||cammedia.com^
+||camonster.com^
 ||campadv.ga^
 ||campagnessm.club^
 ||campaign-tapad.s3.amazonaws.com^
@@ -15668,7 +15668,6 @@
 ||chatovod.com^
 ||chatplus.jp^
 ||chatra.io^
-||chaturbate.com^
 ||chaucha.cl^
 ||chauksoa.net^
 ||chaxinyong.net^
@@ -16133,7 +16132,6 @@
 ||click.khingtracking.com^
 ||click.kmindex.ru^
 ||click.liftoff.io^
-||click.linksynergy.com^
 ||click.lucky.online^
 ||click.maaxmarket.com^
 ||click.mobile-bt.com^
@@ -27232,7 +27230,6 @@
 ||hcg82f2b.com^
 ||hchik.com^
 ||hchrmain.112.2o7.net^
-||hclips.com^
 ||hcwljy.com^
 ||hd.mmstat.com^
 ||hd149026b.com^
@@ -33846,7 +33843,6 @@
 ||m.b1102187.com^
 ||m.benaughty.com^
 ||m.blogads.com^
-||m.chaturbate.com^
 ||m.data.mob.com^
 ||m.dlx.addthis.com^
 ||m.doubleclick.net^
@@ -33909,6 +33905,7 @@
 ||m1.jintang114.org^
 ||m1.kuanff.com^
 ||m1.nn670.com^
+||m1.nsimg.net^
 ||m1.vodjk.com^
 ||m1.we556.com^
 ||m1.webstats.motigo.com^
@@ -34224,6 +34221,7 @@
 ||maimeehu.com^
 ||main.atdmt.com^
 ||main.dynsrvazg.com^
+||main.dynsrvdea.com^
 ||main.exdynsrv.com^
 ||main.exoclick.com^
 ||main.exosrv.com^
@@ -35342,6 +35340,7 @@
 ||metrics.babycenter.com^
 ||metrics.babycentre.co.uk^
 ||metrics.baitoru.com^
+||metrics.bangbros.com^
 ||metrics.barclaycardus.com^
 ||metrics.beachbody.com^
 ||metrics.bet.com^
@@ -47607,7 +47606,6 @@
 ||secureredirect101.com^
 ||securerunner.com^
 ||securesearchnow.com^
-||secureservercdn.net^
 ||securesmrt-dt.com^
 ||securesoft.info^
 ||securestatic.es^
@@ -54510,7 +54508,6 @@
 ||tps30.doubleverify.com^
 ||tps711.doubleverify.com^
 ||tpt.dotomi.com^
-||tpucdn.com^
 ||tpx.tesseradigital.com^
 ||tq.adventurefeeds.com^
 ||tqbmcmttzid.com^
@@ -62712,7 +62709,6 @@
 ||xguqeh.com^
 ||xhamsterlive.com^
 ||xhbqczl.com^
-||xhcdn.com^
 ||xhct66.com^
 ||xhealth.112.2o7.net^
 ||xhealthmobiletools.112.2o7.net^
@@ -63170,7 +63166,6 @@
 ||yassociallya.club^
 ||yast.rutube.ru^
 ||yastat.net^
-||yastatic.net^
 ||yatab.net^
 ||yatemy.cn^
 ||yatrk.xyz^
