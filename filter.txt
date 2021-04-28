@@ -16152,6 +16152,7 @@
 ||click.speee-ad.jp^
 ||click.startappservice.com^
 ||click.stats-locations.com^
+||click.linksynergy.com^
 ||click.tanx.com^
 ||click.testyourluck32.club^
 ||click.top10sites.com^
