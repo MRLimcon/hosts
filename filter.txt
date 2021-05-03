@@ -44913,7 +44913,6 @@
 ||hdvwm3.cn^
 ||hdxcpj.otrium.nl^
 ||hdxxpp.com^
-||hdzog.ahcdn.com^
 ||he.lijit.com^
 ||he6e.lavieimmo.com^
 ||he7ll.com^
@@ -96417,7 +96416,6 @@
 ||txtspy.org^
 ||txvcwirjkdggmwivwxcf.com^
 ||txwha3vuso66.com^
-||txxx.ahcdn.com^
 ||txzs168.net^
 ||ty.linkshare.com^
 ||ty65xcc-smart-manatee.mybluemix.net^
@@ -99372,7 +99370,6 @@
 ||vizu.com^
 ||vizury.com^
 ||vizzit.se^
-||vjav0.ahcdn.com^
 ||vjcbm.com^
 ||vjjgpt.diamond.jp^
 ||vjjwuegyajqtiqmalkqv.com^
@@ -118366,7 +118363,6 @@
 ||www.perfect-fit.de^
 ||www.perfectaudience.com^
 ||www.perfectbrush360.pl^
-||www.perfectgirls.net^
 ||www.perfectmarket.com^
 ||www.perfecttools.pl^
 ||www.perfordpetre.club^
@@ -126527,7 +126523,6 @@
 ||xgrwjbui.top^
 ||xgspzv.troyestore.com^
 ||xguqeh.com^
-||xh.video^
 ||xhack4u.com^
 ||xhacked.com^
 ||xhamsterlive.com^
@@ -128961,6 +128956,8 @@
 ||zzz.clickbank.net^
 ||zzz.onion.pet^
 ||zzznews.ru^
+||qgogogox.com^
+||push.soft-com.biz^
 youtube.com##ytd-promoted-sparkles-web-renderer
 youtube.com##ytd-carousel-ad-renderer
 youtube.com##ytd-display-ad-renderer
