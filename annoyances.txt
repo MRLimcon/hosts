@@ -1,0 +1,580 @@
+[Adblock Plus 3.6]
+! Title: MRLimcon Annoyances List
+! Description: My annoyances list
+! Homepage: https://gitlab.com/MRLimcon/hosts/
+! Expires: 3 days
+! Version: 1
+/js_lo.php
+/blo.php
+/bac_loa.php
+youtube.com##.ad-container
+youtube.com##.video-ads
+youtube.com###player-ads
+youtube.com##.ytp-ad-progress-list
+=adunit&$domain=youtube.com
+youtube.com###masthead-ad
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.pyv-afc-ads-container
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer:has( > div#contents > ytd-promoted-sparkles-text-search-renderer )
+www.youtube.com##ytd-carousel-ad-renderer
+www.youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+www.youtube.com###video-masthead
+youtube.com##.ytp-ad-overlay-container
+youtube.com#@#.overlay-ads
+youtube.com#@#.ddb
+youtube.com##.ytp-ad-progress
+youtube.com###ad-image\:22
+youtube.com##.ytd-action-companion-ad-renderer
+||ads.youtube.com^
+||doubleclick.net^
+||flashtalking.com$domain=youtube.com
+||googleadservices.com
+||googlesyndication.com^
+||2mdn.net^
+||www.google.*/pagead$domain=youtube.com
+||www.youtube.com/[[computeEmptyGif_()]]$image
+||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
+||www.youtube.com/api/stats
+||www.youtube.com/pagead
+||www.youtube.com/ptracking
+||youtube.com/get_midroll_
+||pagead2.googlesyndication.com^
+||google.com/pagead/lvz?
+||youtube.com/pagead/
+||youtube.com/ads/$image
+||admob.com^
+||adservice.google.com^
+||adservice.google.com.tw^
+||adservice.google.tw^
+||google-analytics.com^
+||googletagservices.com^
+||googletagmanager.com^
+@@||youtube.com/yt/advertise/medias/images/$image
+@@||youtube.com/yt/css/*-advertise.css
+@@||youtube.com/yt/js/www-advertise.min.js$domain=youtube.com
+@@||youtube.com^*adsense$xmlhttprequest
+@@||youtube.com/ads/preferences/$popup
+
+!
+! -YouTube APP Test-
+!
+m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id])
+m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id]) + div
+m.youtube.com##.companion-ad-container
+youtube.com##ytm-promoted-video-renderer
+||youtube.com/_get_ads?
+||googleapis.com/youtubei/v1/browse?$important,protobuf=62887855|49413586|51621377
+||googleapis.com/youtubei/v1/browse?$protobuf=62887855|49413586|51621377
+||googleapis.com/youtubei/v1/next?$important,protobuf=55514441|62960614|65002523|105649908|82182324|99845384
+||googleapis.com/youtubei/v1/next?$protobuf=55514441|62960614|65002523|105649908|82182324|99845384
+||googleapis.com/youtubei/v1/player$important,protobuf=48841103|63112829|23|25
+||googleapis.com/youtubei/v1/player$protobuf=48841103|63112829|23|25
+||googleapis.com/youtubei/v1/search?$important,protobuf=73920376
+||googleapis.com/youtubei/v1/search?$protobuf=73920376
+
+
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-carousel-ad-renderer
+youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-rich-item-renderer:has( > div > ytd-display-ad-renderer )
+youtube.com##.ad-container
+youtube.com##.video-ads
+youtube.com##.ytp-ad-progress-list
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.iv-promo
+youtube.com###player-ads
+youtube.com###masthead-ad
+youtube.com###video-masthead 
+youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
+youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+!#if adguard
+youtube.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', '0.playerResponse.adPlacements 0.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds')
+!#endif
+=adunit&$domain=youtube.com
+||www.youtube.com/ads/$image
+||www.youtube.com/yts/jsbin/www-pagead-id-
+||youtube.com/get_midroll_
+||pagead2.googlesyndication.com^
+||www.google.co.jp/pagead/lvz?
+||youtube.com/pagead/
+||doubleclick.net^
+||2mdn.net^$domain=youtube.com
+!youtube end
+
+!m.youtube.com##ytm-item-section-renderer.scwnr-content:nth-of-type(3)
+###ytm-promoted-sparkles-web-renderer
+##.ytm-promoted-sparkles-web-renderer
+##ytm-promoted-sparkles-web-renderer
+###YtSparklesVisibilityIdentifier
+##.YtSparklesVisibilityIdentifier
+##YtSparklesVisibilityIdentifier
+##GoogleActiveViewElement
+##.GoogleActiveViewElement
+###GoogleActiveViewElement
+##ytd-watch-next-secondary-results-renderer
+! 2021-06-03 https://www.youtube.com
+www.youtube.com##.ytd-live-chat-frame.style-scope > .ytd-toggle-button-renderer.style-scope.yt-simple-endpoint > .ytd-toggle-button-renderer.style-scope
+
+! 2021-06-17 https://www.twitch.tv
+||/assets/features.video-player.components.video-ads
+
+! 2021-06-18 https://www.youtube.com
+www.youtube.com###top-level-buttons-computed > ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope > .ytd-button-renderer.style-scope.yt-simple-endpoint
+www.youtube.com##.size-default.style-suggestive.ytd-video-owner-renderer.style-scope > .ytd-button-renderer.style-scope.yt-simple-endpoint > .size-default.style-suggestive.ytd-button-renderer.style-scope
+www.youtube.com##.size-default.style-text.ytd-subscription-notification-toggle-button-renderer.style-scope
+
+! 2021-06-19 https://www.youtube.com
+www.youtube.com##.style-default.ytd-topbar-menu-button-renderer.style-scope
+www.youtube.com##.notification-button-style-type-default.ytd-notification-topbar-button-renderer.style-scope
+
+twitch.tv##[aria-label$="Recommended Channels"]
+twitch.tv##.channel-leaderboard
+!twitch.tv##[aria-label$="Open Notifications"]
+twitch.tv##[aria-label$="Share"]
+twitch.tv##+js(twitch-videoad)
+
+! Removes comments on video pages
+||youtube.com/live_chat_fragments_ajax?$xmlhttprequest
+||youtube.com/comment_service_ajax?$domain=youtube.com
+youtube.com###comments
+
+! Removes all annotations in videos
+||youtube.com/annotations_invideo?$object-subrequest
+! HTML5 version
+youtube.com##.video-annotations
+
+! Removes video suggestions on video pages
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item > .related-video
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+
+! Removes recommended channels on home page, susbcriptions page and feed
+youtube.com##.home .branded-page-v2-secondary-col
+youtube.com##.feed .branded-page-v2-secondary-col
+youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+
+! Removes sharing tab below videos
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
+
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com
+youtube.com##.html5-endscreen-content
+youtube.com##.html5-endscreen
+
+! Removes related/featured/popular channels on channel pages
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+
+! "Subscribe to see more videos from this channel" on home page after watching some video of a channel
+youtube.com###channel-subscription-promo-in-feed
+
+! Removes the YouTube Gaming button in the left-hand menu
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*="/gaming"])
+
+! Removes the Trending button in the left-hand menu
+m.youtube.com##.scbrr-tab[href="/feed/trending"]
+m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
+
+! Removes the Discover button in the left-hand menu
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*="feed/guide_builder"])
+
+! Removes the pop-out player button in the video player
+www.youtube.com##.ytp-button.ytp-miniplayer-button
+
+! Removes the Livestream button in the left-hand menu
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*=UC4R8DWoMoI7CAwX8_LjQHig])
+
+! Removes the Homepage button in the left-hand menu
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href="/"])
+www.youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href="/"])
+m.youtube.com##.scbrr-tab[href="/"]
+m.youtube.com##ytm-pivot-bar-item-renderer:first-of-type
+
+! Removes the video store button in the left-hand menu
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*=UClgRkhTL3_hImCAmdLfDE4g])
+
+! Removes the app drawer in the top-right menu
+www.youtube.com#?##button:-abp-has([aria-label*=app])
+
+! Removes video suggestions
+##.ytp-endscreen-content
+youtube.com,youtubekids.com###related
+m.youtube.com##ytm-watch ytm-compact-video-renderer
+m.youtube.com##[section-identifier=related-items]
+/annotations_module.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
+/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
+invidious.snopyta.org,yewtu.be,invidious.tube,invidious.kavin.rocks,tube.connect.cafe,invidious.zapashcanon.fr,invidious.fdn.fr,invidiou.site,vid.mint.lgbt,invidious.site,invidious.048596.xyz,invidious.zee.li,vid.puffyan.us,c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion,w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion,kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion,invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion,grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion,tube.incognet.io,tubo.peertube.uno#?#.pure-u-lg-1-5 > .h-box:-abp-has(.pure-u-14-24)
+hooktube.com#?#.col-lg-4:-abp-has(#video-list)
+! Seems to remove "Recommended for you" suggestions
+||youtube.com/related_ajax^
+
+! Removes the like/dislike counters
+youtube.com##ytd-toggle-button-renderer #text
+youtube.com###sentiment
+m.youtube.com##.slim-video-metadata-actions > [data-button-id]:first-of-type .button-renderer-text
+m.youtube.com##.slim-video-metadata-actions > [data-button-id]:nth-of-type(2) .button-renderer-text
+invidious.snopyta.org,yewtu.be,invidious.tube,invidious.kavin.rocks,tube.connect.cafe,invidious.zapashcanon.fr,invidious.fdn.fr,invidiou.site,vid.mint.lgbt,invidious.site,invidious.048596.xyz,invidious.zee.li,vid.puffyan.us,c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion,w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion,kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion,invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion,grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion,tube.incognet.io,tubo.peertube.uno###likes, #dislikes
+hooktube.com###video-stats .text-right
+hooktube.com###progress-bar-likes
+twitch.tv#?#.ffz__tooltip .stats:-abp-contains(👍):-abp-contains(👎)
+
+! Removes the large grey [YouTube Kids / game info] buttons below gaming videos
+youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
+m.youtube.com##ytm-watch-metadata-app-promo-renderer
+m.youtube.com##ytm-rich-metadata-renderer
+
+! Removes the Share arrow button in fullscreen mode and in embeds
+youtube.com,youtube-nocookie.com##button[class*=share-button]
+
+! Aims to prevent video suggestions from showing up when pausing embedded videos
+##.ytp-scroll-min
+##.ytp-pause-overlay
+
+! Removes the frontpage link from the upper left YouTube logo (Not supported by ABP or AdBlock)
+youtube.com#?##logo:style(pointer-events: none !important; cursor: default !important)
+
+! Removes video epilogue suggestion overlays
+youtube.com##.ytp-ce-element-show
+
+! Removes a banner that promotes YouTube Premium
+youtube.com###masthead-ad
+
+! Believed to remove sponsored description links inserted by rights holders
+www.youtube.com##ytd-metadata-row-renderer
+
+! Removes the Explore buttons in the left-hand menu
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*="feed/explore"])
+www.youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href*="feed/explore"])
+
+! ————————————————————————————————————————————————————————————————
+
+! ——— Comment sections that are not covered by "Pure Viewing Experience" ———
+
+! Removes the comment section on phones
+m.youtube.com##ytm-comment-section-renderer
+
+! Removes the comment section on livestreams
+youtube.com##ytd-live-chat-frame
+
+! Removes the comment section on livestream VoDs
+youtube.com###watch-discussion
+
+! Removes the comment section on third-party GUIs
+invidious.snopyta.org,yewtu.be,invidious.tube,invidious.kavin.rocks,tube.connect.cafe,invidious.zapashcanon.fr,invidious.fdn.fr,invidiou.site,vid.mint.lgbt,invidious.site,invidious.048596.xyz,invidious.zee.li,vid.puffyan.us,c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion,w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion,kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion,invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion,grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion,tube.incognet.io###comments
+
+! ————————————————————————————————————————————————————————————————
+
+! ——— "Disable Polymer" mode ———
+
+! Removes the Homepage button in the left-hand menu when using "Disable polymer"
+www.youtube.com###what_to_watch-guide-item
+
+! Removes the video store and YouTube Gaming buttons in the left-hand menu when using "Disable polymer"
+www.youtube.com##li.guide-section:nth-of-type(5) > .personal-item.guide-item-container > .yt-box.yt-uix-tdl.guide-user-links
+
+! Removes the Discover button in the left-hand menu when using "Disable polymer"
+www.youtube.com##li.guide-section:nth-of-type(4)
+
+! Removes the Trending button in the left-hand menu when using "Disable polymer"
+www.youtube.com###trending-guide-item
+
+! Attempts to remove YouTube frontpage recommended videos and channels when using "Disable polymer" (and using YouTube in a Germanic language)
+www.youtube.com#?#.feed-item-container.browse-list-item-container:-abp-has(.shelf-title-annotation:-abp-contains( for ))
+
+! Removes the like/dislike counters
+www.youtube.com##.like-button-renderer-like-button > .yt-uix-button-content
+www.youtube.com##.like-button-renderer-dislike-button > .yt-uix-button-content
+www.youtube.com##.video-extras-sparkbars
+
+! ————————————————————————————————————————————————————————————————
+
+! ——— "TV" mode ———
+
+! Removes most video suggestions in TV mode
+! Sadly, at least one suggestion had to remain in each row, or else you couldn't browse down to the Home and Search buttons.
+www.youtube.com##.exp-enable-live-seeking > #leanback > #app-markup > #watch > #bottom-half .pivot-row .watchable-tile:not(:first-of-type)
+
+! Removes the Trending button in the top bar. At least I think it's the Trending button.
+www.youtube.com##div.top-nav-tab:nth-of-type(2)
+
+! Removes the Gaming button in the top bar
+www.youtube.com#?#div.top-nav-tab:-abp-contains(/^Gaming$/)
+
+! ————————————————————————————————————————————————————————————————
+
+! ——— YouTube Android apps (Requires "AdGuard for Android") ———
+
+!#if adguard_app_android
+! Removes comments on video pages
+||youtube.com/live_chat_fragments_ajax?$app=com.google.android.youtube|com.google.android.apps.youtube.music|com.google.android.apps.youtube.vr|com.google.android.youtube.tv|com.google.android.youtube.googletv
+||youtube.com/comment_service_ajax?$app=com.google.android.youtube|com.google.android.apps.youtube.music|com.google.android.apps.youtube.vr|com.google.android.youtube.tv|com.google.android.youtube.googletv
+
+! Removes video suggestions
+/annotations_module.js$app=com.google.android.youtube|com.google.android.apps.youtube.music|com.google.android.apps.youtube.vr|com.google.android.youtube.tv|com.google.android.youtube.googletv
+/endscreen.js$app=com.google.android.youtube|com.google.android.apps.youtube.music|com.google.android.apps.youtube.vr|com.google.android.youtube.tv|com.google.android.youtube.googletv
+||youtube.com/annotations_invideo?$app=com.google.android.youtube|com.google.android.apps.youtube.music|com.google.android.apps.youtube.vr|com.google.android.youtube.tv|com.google.android.youtube.googletv
+
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$app=com.google.android.youtube|com.google.android.apps.youtube.music|com.google.android.apps.youtube.vr|com.google.android.youtube.tv|com.google.android.youtube.googletv
+!#endif
+
+! ————————————————————————————————————————————————————————————————
+
+! Below are entries that I borrowed verbatim (except for adding extra domain coverage) from «YouTube: Pure Video Experience», which was maintained by monztA until 2017, and which is currently believed to have no known copyright statements or licences.
+
+! Removes comments on video pages
+||youtube.com/live_chat_fragments_ajax?$xmlhttprequest
+||youtube.com/comment_service_ajax?$domain=youtube.com|youtu.be|youtube-nocookie.com
+youtube.com###comments
+! Removes all annotations in videos
+||youtube.com/annotations_invideo?$object-subrequest
+! HTML5 version
+youtube.com,youtube-nocookie.com##.video-annotations
+! Removes video suggestions on video pages
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+! Removes recommended channels on home page, susbcriptions page and feed
+youtube.com##.home .branded-page-v2-secondary-col
+youtube.com##.feed .branded-page-v2-secondary-col
+youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+! Removes sharing tab below videos
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+youtube.com##.action-panel-trigger[role=button][data-trigger-for=action-panel-share]
+youtube.com##.yt-uix-button[data-trigger-for=action-panel-share]
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com|youtu.be|youtube-nocookie.com
+youtube.com,youtube-nocookie.com##.html5-endscreen-content
+youtube.com,youtube-nocookie.com##.html5-endscreen
+! Removes related/featured/popular channels on channel pages
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+! "Subscribe to see more videos from this channel" on home page after watching some video of a channel
+youtube.com###channel-subscription-promo-in-feed
+
+! Removes the "Recommended channels" section when you're logged on
+www.twitch.tv##.recommended-channels
+www.twitch.tv##.tw-flex-grow-1 > div:nth-of-type(1) > .side-nav-section:nth-of-type(2)
+www.twitch.tv#?#.side-nav-section:-abp-has(path[d="M12.002 3.999a2 2 0 012 2v2L18 6v8l-3.998-2v2a2 2 0 01-2 1.999h-8a2 2 0 01-2-2V6a2 2 0 012-2h8zM12 6H4v8h8V6z"])
+
+! Removes the "Recommended channels" section when you're not logged on
+www.twitch.tv##.tw-full-width > .tw-mg-b-2
+
+! Attempts to remove suggestions from the "Following" page
+www.twitch.tv#?#div:-abp-has(> .tw-mg-b-1 > h4[data-a-target=live-channels-header]) + div
+
+! Aims to remove the spacing between Twitch emotes, for the sake of multi-part emotes
+twitch.tv#?#.message > span:-abp-contains(/^ $/)
+clips.twitch.tv#?#span.text-fragment:not(:-abp-contains(/\S/))
+
+! Desperately tries to remove the "Popular videos [from everywhere]" row and most likely failing at it.
+clips.twitch.tv#?#div:nth-of-type(3):-abp-has(> .tw-pd-y-2)
+
+! Removes the ungodly awful Hype Train chat banner
+www.twitch.tv##.community-highlight-stack__card
+
+! Aims to remove mass spamming of "!play" on streams of 'Marbles on Stream'
+twitch.tv#?#div[class$=message]:not(.tw-inline):-abp-has(.message:-abp-contains(/^!play$/))
+
+! Aims to remove that one RPG-loot-game embed window that is on some Twitch channels
+twitch.tv#?#.channel-panels-container div[style^=position]:-abp-has(a[href^="/ext/ro13roxp88918kulntih9uzm7vs9jr"])
+
+! Removed a seemingly blank community message floaty on top of chat
+www.twitch.tv##.community-highlight-stack__backlog-card
+
+! ——— ↓ Not supported by ABP or AdBlock ↓ ———
+
+! Reduces the size of the chat header
+www.twitch.tv#?#.video-chat__header:style(height: 20px !important)
+www.twitch.tv#?#.tw-pd-r-1.tw-pd-l-2.tw-justify-content-between.tw-full-width:style(height: 2rem)
+
+! Broadens the chat textbox
+www.twitch.tv#?#.tw-flex-shrink-0.tw-full-width.tw-pd-b-2.tw-pd-t-1.tw-pd-x-2.video-chat__input:style(padding: 4px 1px 1px !important)
+www.twitch.tv#?#.tw-textarea.tw-textarea--no-resize:style(padding: 1px 35px !important; height: 55px !important)
+www.twitch.tv#?#.chat-input.tw-block:style(padding: 0 3px 2px !important)
+
+! Reduces the size of the "Hosting [channel]" header
+twitch.tv#?#.tw-align-items-center.tw-flex.tw-flex-nowrap.tw-justify-content-between.tw-pd-1:style(padding-top: 0 !important; padding-bottom: 0 !important)
+
+! Narrows the spacing between the chat comments
+twitch.tv#?#.chat-line__message:style(padding: 2px 4px !important)
+twitch.tv#?#.tw-full-width.tw-pd-l-05.tw-pd-y-05.vod-message:style(padding: 2px 4px !important)
+clips.twitch.tv#?#.clips-chat-replay > .tw-mg-b-1:style(margin-bottom: 2px !important)
+
+! Narrows the spacing between the chat comments in mobile browser mode
+m.twitch.tv#?#li.chat-message:style(padding: 2px !important)
+
+! Maximises the size of the clip viewer pages
+clips.twitch.tv#?#.clips-watch.tw-lg-pd-b-5.tw-pd-b-2.tw-sm-pd-b-3:style(max-width: none)
+
+! Makes avatars square again without having to use FrankerFaceZ
+twitch.tv#?#.tw-avatar > img.tw-border-radius-rounded:style(border-radius: unset !important)
+
+! Removes the "Recommended channels" section when you're logged on
+www.twitch.tv##.recommended-channels
+www.twitch.tv##.tw-flex-grow-1 > div:nth-of-type(1) > .side-nav-section:nth-of-type(2)
+www.twitch.tv#?#.side-nav-section:-abp-has(path[d="M12.002 3.999a2 2 0 012 2v2L18 6v8l-3.998-2v2a2 2 0 01-2 1.999h-8a2 2 0 01-2-2V6a2 2 0 012-2h8zM12 6H4v8h8V6z"])
+
+! Removes the "Recommended channels" section when you're not logged on
+www.twitch.tv##.tw-full-width > .tw-mg-b-2
+
+! Attempts to remove suggestions from the "Following" page
+www.twitch.tv#?#div:-abp-has(> .tw-mg-b-1 > h4[data-a-target=live-channels-header]) + div
+
+! Aims to remove the spacing between Twitch emotes, for the sake of multi-part emotes
+twitch.tv#?#.message > span:-abp-contains(/^ $/)
+clips.twitch.tv#?#span.text-fragment:not(:-abp-contains(/\S/))
+
+! Desperately tries to remove the "Popular videos [from everywhere]" row and most likely failing at it.
+clips.twitch.tv#?#div:nth-of-type(3):-abp-has(> .tw-pd-y-2)
+
+! Removes the ungodly awful Hype Train chat banner
+www.twitch.tv##.community-highlight-stack__card
+
+! Aims to remove mass spamming of "!play" on streams of 'Marbles on Stream'
+twitch.tv#?#div[class$=message]:not(.tw-inline):-abp-has(.message:-abp-contains(/^!play$/))
+
+! Aims to remove that one RPG-loot-game embed window that is on some Twitch channels
+twitch.tv#?#.channel-panels-container div[style^=position]:-abp-has(a[href^="/ext/ro13roxp88918kulntih9uzm7vs9jr"])
+
+! Removed a seemingly blank community message floaty on top of chat
+www.twitch.tv##.community-highlight-stack__backlog-card
+
+! ——— ↓ Not supported by ABP or AdBlock ↓ ———
+
+! Reduces the size of the chat header
+www.twitch.tv#?#.video-chat__header:style(height: 20px !important)
+www.twitch.tv#?#.tw-pd-r-1.tw-pd-l-2.tw-justify-content-between.tw-full-width:style(height: 2rem)
+
+! Broadens the chat textbox
+www.twitch.tv#?#.tw-flex-shrink-0.tw-full-width.tw-pd-b-2.tw-pd-t-1.tw-pd-x-2.video-chat__input:style(padding: 4px 1px 1px !important)
+www.twitch.tv#?#.tw-textarea.tw-textarea--no-resize:style(padding: 1px 35px !important; height: 55px !important)
+www.twitch.tv#?#.chat-input.tw-block:style(padding: 0 3px 2px !important)
+
+! Reduces the size of the "Hosting [channel]" header
+twitch.tv#?#.tw-align-items-center.tw-flex.tw-flex-nowrap.tw-justify-content-between.tw-pd-1:style(padding-top: 0 !important; padding-bottom: 0 !important)
+
+! Narrows the spacing between the chat comments
+twitch.tv#?#.chat-line__message:style(padding: 2px 4px !important)
+twitch.tv#?#.tw-full-width.tw-pd-l-05.tw-pd-y-05.vod-message:style(padding: 2px 4px !important)
+clips.twitch.tv#?#.clips-chat-replay > .tw-mg-b-1:style(margin-bottom: 2px !important)
+
+! Narrows the spacing between the chat comments in mobile browser mode
+m.twitch.tv#?#li.chat-message:style(padding: 2px !important)
+
+! Maximises the size of the clip viewer pages
+clips.twitch.tv#?#.clips-watch.tw-lg-pd-b-5.tw-pd-b-2.tw-sm-pd-b-3:style(max-width: none)
+
+! Makes avatars square again without having to use FrankerFaceZ
+twitch.tv#?#.tw-avatar > img.tw-border-radius-rounded:style(border-radius: unset !important)
+! <<<<<<<< https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt
+!#include AntiAmazonListForTwitch.txt
+! >>>>>>>> https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt
+[Adblock Plus 3.6]
+! Title: 📭 Anti-Amazon List for Twitch
+! Version: 17April2021v1-Beta
+! Expires: 2 days
+! Description: Are you tired of having to look at all the buttons and links with which Amazon promote their account and payment services while you're watching a good stream (i.e. Vinesauce)? Now you won't have look at all those buttons anymore!
+! Motivation: As someone who lives in Norway, which is not an Amazon core country, I became increasingly annoyed at how they hid away shipping fees from me, and even more annoyed when they barred third-party sellers from shipping abroad. Thus I deleted my Amazon account in protest, and to this day I refuse to make a new one.
+! To remove non-Amazon annoyances and to make better use of the chat space, check out "Twitch: Pure Viewing Experience" (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt).
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
+!#if !env_mobile
+twitch.tv##[data-a-target=prime-offers-icon]
+twitch.tv##[data-a-target=try-prime-link]
+twitch.tv##[data-a-target*=get-bits-button]
+twitch.tv##[data-a-target=bits-button]
+twitch.tv##.prime-offers__pill
+twitch.tv#?#div.tw-mg-b-2:-abp-has(div[data-test-selector=prime-sub-upsell])
+twitch.tv#?#.extension-taskbar-card-container:-abp-has(img[src*=".ext-twitch.tv/"][src*="/internal/taskbar-icon/"][src$="/636647020003385346.png"])
+||d4uvtfdr04uq6raoenvj7m86gdk16v.ext-twitch.tv^
+twitch.tv#?#.extension-taskbar-card-container:-abp-contains(V1)
+twitch.tv#?#.extension-taskbar-card-container:-abp-contains(C1)
+twitch.tv#?#.blue-bar__bar:-abp-contains(Twitch Prime)
+twitch.tv#?#.tw-transition:-abp-has(.tw-tooltip:-abp-contains(Loot Reminder))
+twitch.tv#?#.extensions-dock__layout:-abp-has([title$="Loot Reminder"])
+!#if !adguard
+twitch.tv#?#.chat-line__message,.vod-message:-abp-contains(you can link your Twitch account to your active Amazon Prime subscription)
+twitch.tv#?#.chat-line__message,.vod-message:-abp-contains(/With Amazon prime you can subscribe for FREE/i)
+!#endif
+!#endif
+m.twitch.tv#?#.tw-c-background-base > li:-abp-contains(you can link your Twitch account to your active Amazon Prime subscription)
+m.twitch.tv#?#.tw-c-background-base > li:-abp-contains(/With Amazon prime you can subscribe for FREE/i)
+! <<<<<<<< https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt
+!#include RickrollLinkIdentifier.txt
+! >>>>>>>> https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt
+! Title: 🎙 Rickroll Link Identifier
+! Version: 16June2021v1
+! Expires: 10 days
+! Description: So you're browsing Reddit or Twitch, and you're seeing an interesting info link? Well… about that link… this list will turn links to the biggest YouTube uploads of Rick Astley's «Never Gonna Give You Up» into a bright red colour, thus helping you steer clear of being rickrolled.
+! Never in my entire life have I seen anyone try to link to e.g. the Spotify uploads of «Never Gonna Give You Up» for rickrolling, so I'll skip adding entries for streaming service links for now.
+! I have been made aware of «Whenever You Need Somebody» having the same intro, but at the current point in time that song is considered to be out of scope for this list.
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
+##a[href="/watch?v=dQw4w9WgXcQ"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="/watch?v=oHg5SJYRHA0"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="%2Fwatch%3Fv%3DdQw4w9WgXcQ"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="%2Fwatch%3Fv%3DoHg5SJYRHA0"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="youtu.be/dQw4w9WgXcQ"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="youtu.be/oHg5SJYRHA0"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="youtube-nocookie.com/embed/dQw4w9WgXcQ"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="youtube-nocookie.com/embed/oHg5SJYRHA0"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+*##a[href$="imgur.com/gallery/yed5Zfk"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+##a[href="imgur.com/yed5Zfk"]:before:style(content: "(Warning: Rickroll) " !important; color: #E6000D !important; visibility: visible)
+||youtube.com/watch?v=dQw4w9WgXcQ^
+||youtube.com/watch?v=oHg5SJYRHA0^
+||youtube.com./watch?v=dQw4w9WgXcQ^
+||youtube.com./watch?v=oHg5SJYRHA0^
+||youtu.be/dQw4w9WgXcQ^
+||youtu.be/oHg5SJYRHA0^
+||imgur.com/*yed5Zfk
+||sanfransentinel.com^
+||theraleighregister.com^
+
+! Partial support for YouTube videos that aren't covered by https://rickrolldb.com/, whose list updates and submission form are both broken
+||youtube.com/watch?v=rW7hXs-81hM^
+||youtu.be/rW7hXs-81hM^
+! <<<<<<<< https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt
+
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
+!#if !env_mobile
+twitch.tv##[data-a-target=prime-offers-icon]
+twitch.tv##[data-a-target=try-prime-link]
+twitch.tv##[data-a-target*=get-bits-button]
+twitch.tv##[data-a-target=bits-button]
+twitch.tv##.prime-offers__pill
+twitch.tv#?#div.tw-mg-b-2:-abp-has(div[data-test-selector=prime-sub-upsell])
+twitch.tv#?#.extension-taskbar-card-container:-abp-has(img[src*=".ext-twitch.tv/"][src*="/internal/taskbar-icon/"][src$="/636647020003385346.png"])
+||d4uvtfdr04uq6raoenvj7m86gdk16v.ext-twitch.tv^
+twitch.tv#?#.extension-taskbar-card-container:-abp-contains(V1)
+twitch.tv#?#.extension-taskbar-card-container:-abp-contains(C1)
+twitch.tv#?#.blue-bar__bar:-abp-contains(Twitch Prime)
+twitch.tv#?#.tw-transition:-abp-has(.tw-tooltip:-abp-contains(Loot Reminder))
+twitch.tv#?#.extensions-dock__layout:-abp-has([title$="Loot Reminder"])
+!#if !adguard
+twitch.tv#?#.chat-line__message,.vod-message:-abp-contains(you can link your Twitch account to your active Amazon Prime subscription)
+twitch.tv#?#.chat-line__message,.vod-message:-abp-contains(/With Amazon prime you can subscribe for FREE/i)
+!#endif
+!#endif
+m.twitch.tv#?#.tw-c-background-base > li:-abp-contains(you can link your Twitch account to your active Amazon Prime subscription)
+m.twitch.tv#?#.tw-c-background-base > li:-abp-contains(/With Amazon prime you can subscribe for FREE/i)
+
+! 2021-08-22 https://www.japantimes.co.jp
+||buy-ap.piano.io/checkout/offer/show$subdocument
+www.japantimes.co.jp##.tp-modal
+www.japantimes.co.jp##.tp-active.tp-backdrop
+
+! 2021-08-28 https://www.youtube.com
+www.youtube.com###secondary
+www.youtube.com###sections
+##.ytd-watch-next-secondary-results-renderer
+##.ytd-comments
+www.youtube.com##ytd-watch-next-secondary-results-renderer
+www.youtube.com###comments
+www.youtube.com###voice-search-button > .size-default.style-default.ytd-masthead.style-scope > .ytd-button-renderer.style-scope.yt-simple-endpoint > .size-default.style-default.ytd-button-renderer.style-scope
+www.youtube.com##.ytd-topbar-menu-button-renderer.style-scope.yt-simple-endpoint
+www.youtube.com##.ytd-notification-topbar-button-renderer.style-scope.yt-simple-endpoint
+www.youtube.com###voice-search-button
+
+
